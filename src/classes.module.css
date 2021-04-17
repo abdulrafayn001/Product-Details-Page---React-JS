@@ -60,7 +60,51 @@
     margin-right: 20px;
 }
 
-.Btn:focus{
+.SelectedBtn{
     background-color: gray;
     color: white;
+}
+
+.FeatureData{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.FeatureHeartBeat{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+
+.FeatureHeartBeat>i{
+    margin-bottom: 80px;
+    color: red;
+    animation: beat 1s infinite;
+}
+
+@keyframes beat {
+    0%{
+        transform: scale(1,1);
+    }
+
+    50%{
+        transform:scale(1.2,1.2);
+    }
+
+    100%{
+        transform: scale(1,1);
+    }
+}
+.ProductPreview{
+    position:relative;
 }

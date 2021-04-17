@@ -1,6 +1,6 @@
 import classes from './classes.module.css';
 import ColorSelector from './ColorSelector'
-
+import FeatureButtons from './FeatureButtons'
 const DetailBox = (props) => {
     return (
         <div>
@@ -8,10 +8,9 @@ const DetailBox = (props) => {
             <p>{props.description}</p>
 
             <h2>Select Color</h2>
-            <ColorSelector colorOptions={props.colorOptions} onOptionBtnClick={props.onOptionBtnClick}/>
+            <ColorSelector selectedWatch={props.selectedWatch} colorOptions={props.colorOptions} onOptionBtnClick={props.onOptionBtnClick}/>
             <h2>Features</h2>
-            <button className={classes.Btn}>{props.featureList[0]}</button>
-            <button className={classes.Btn}>{props.featureList[1]}</button>
+            <FeatureButtons isHeartBeat={props.isHeartBeat} featureList={props.featureList} onFeatureBtnClick={props.onFeatureBtnClick}/>
             <br/>
             <button className={classes.Buy}>BUY NOW</button>
         </div>
