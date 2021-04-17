@@ -10,9 +10,57 @@
     width: 120px;
 }
 
-@media screen and (max-width: 600px){
-    .Logo{
-        width: 30%;
-    }
+
+.ColorOptions{
+    width: fit-content;
 }
 
+.WatchOption{
+    cursor: pointer;
+    width: 80px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.selectedWatchoption{
+    border: 2px solid teal;
+}
+
+.MainWatch{
+    width: 500px;
+}
+
+.Details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Buy{
+    border: none;
+    margin: 12px 0px;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background: lightskyblue;
+    color: white;
+    transform: translateY(-6px);
+}
+
+.Btn{
+    background-color: lightgray; /* Green */
+    border: none;
+    color: gray;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    margin-right: 20px;
+}
+
+.Btn:focus{
+    background-color: gray;
+    color: white;
+}
